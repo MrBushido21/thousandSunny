@@ -16,6 +16,24 @@ const swiperFirst = new Swiper('.swiper', {
       stopOnLastSlide: true, // закончить на последнем слайде
       disableOnInteraction: true, //отключить после ручного переключания
     },
+
+     // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true, // переход по клику на булет
+        },
+      },
+      // when window width is >= 840px
+      840: {
+        pagination: {
+          el: '.swiper-paginatio',
+          clickable: true, // переход по клику на булет
+        }
+      }
+    },
       
     slidesPerView: 1, // количесвто слайдов 
     });
