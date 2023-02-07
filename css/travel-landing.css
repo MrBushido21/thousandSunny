@@ -925,6 +925,17 @@
   color: #000000;
   font-weight: bold;
 }
+
+.swiper-wrapper{
+margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #FB8F1D;
+}
+
 @media (max-width: 840.98px) {
   .page .photographers {
     margin-top: 10.7142857143rem;
@@ -1093,7 +1104,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            text-align: center;
     row-gap: 1.4285714286rem;
+  }
+
+  .page .atricle__text {
+    text-align: center;
+    max-width: 100%;
   }
 }
 
