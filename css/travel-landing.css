@@ -1,3 +1,8 @@
+body._lock {
+  overflow: hidden;
+}
+
+
 [class*=__container] {
   max-width: 93.2857142857rem;
   margin: 0 auto;
@@ -23,6 +28,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .header__flexrow {
@@ -123,6 +134,25 @@
     position: relative;
     border-radius: 8px;
   }
+
+  .burger._active.burger::before {
+    top: 50%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .burger._active.burger::after {
+    bottom: 40%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .burger._active .span-burger {
+    display: none;
+  }
+
   .burger::before,
 .burger::after,
 .span-burger {
