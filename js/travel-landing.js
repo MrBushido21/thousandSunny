@@ -46,6 +46,8 @@ const swiperFirst = new Swiper('.swiper', {
 
     burger.addEventListener("click", function() {
       headerList.classList.toggle('_open');
+      burger.classList.toggle('_active');
+      document.body.classList.toggle('_lock');
     });
 
     //================================================================================================================================================
