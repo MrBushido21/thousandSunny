@@ -221,6 +221,7 @@ body._lock {
   }
 }
 .page {
+  padding-top: 5.7142857143rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
